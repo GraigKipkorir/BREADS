@@ -119,7 +119,6 @@ main #actions #services {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
 }
 main #actions #services .row {
   display: flex;
