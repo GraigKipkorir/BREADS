@@ -260,11 +260,11 @@ main #contacts #contact-container .row .col form textarea {
   border: 2px solid rgba(0, 0, 0, 0.04);
   margin: 1em 0;
   padding: 10px;
+  border-radius: 4px;
 }
 main #contacts #contact-container .row .col form input[type=button] {
   background-color: #ff5722;
   color: #ffffff;
-  outline: none;
   border: 2px solid #ff5722;
   width: 35%;
 }/*# sourceMappingURL=main.css.map */
