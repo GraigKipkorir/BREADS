@@ -25,6 +25,7 @@ header{
         display: flex;
         justify-content: space-between;
         font-size: 1.2em;
+        background: #ffffff;
         #logo{
             position: relative;
             img{
@@ -42,4 +43,12 @@ header{
             }
         }
     }
+}
+.fixedheader{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 0 -8px 10px rgba(0,0,0,0.4);
 }

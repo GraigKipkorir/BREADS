@@ -26,6 +26,7 @@ main{
             position: relative;
             padding-left: 50px;
             font-weight: bold;
+            margin-bottom: .5em;
             &::after{
                 position: absolute;
                 height: 3px;
@@ -37,7 +38,7 @@ main{
             }
         }
         p{
-            margin-bottom: 1.5em;
+            margin-bottom: 2em;
             width: 35%;
         }
         .more-btn{

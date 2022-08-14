@@ -28,6 +28,7 @@ main #landing .heading {
   position: relative;
   padding-left: 50px;
   font-weight: bold;
+  margin-bottom: 0.5em;
 }
 main #landing .heading::after {
   position: absolute;
@@ -39,7 +40,7 @@ main #landing .heading::after {
   top: 50%;
 }
 main #landing p {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
   width: 35%;
 }
 main #landing .more-btn {

@@ -194,5 +194,21 @@
         <p>Copyright 2022. All rights reserved.</p>
         <p>Made with heart by <a href="#">Doublecode</a>.</p>
     </footer>
+
+
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            let element = document.getElementById("tab2") 
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {              
+                element.classList.add("fixedheader");
+            } else {
+                element.classList.remove("fixedheader");
+
+            }
+        }
+    </script>
 </body>
 </html>
