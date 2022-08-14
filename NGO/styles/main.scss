@@ -111,4 +111,54 @@ main{
             }
         }
     }
+    #actions{
+        background: rgba(0, 0, 0, 0.04);
+        padding: 3em;
+        .heading{
+            text-align: center;
+            h1{
+                color: #ff5722;
+                margin-bottom: 10px;
+            }
+        }
+        #services{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ffffff;
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .col{
+                    width: calc(100vw / 4);
+                    margin: 2em 0;
+                    .service-item{
+                        display: flex;
+                        flex-direction: row;
+                        .service-icon{
+                            width: 200px;
+                        }
+                        .service-text{
+                            border-left: 2px solid rgba(0, 0, 0, 0.04);
+                            padding-left: 1em;
+                            position: relative;
+                            &::before{
+                                position: absolute;
+                                content: '';
+                                width: 3px;
+                                height: 40px;
+                                background: #ff5722;
+                                left: -2.5px;
+                                top: 25%;
+                            }
+                            h3{
+                                margin-bottom: .5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

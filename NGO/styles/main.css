@@ -103,4 +103,54 @@ main #featured #featured_container .row .col-md-4 .col-row .text p {
 main #featured #featured_container .row .col-md-4 .col-row .text a {
   color: #ff5722;
   font-size: 14px;
+}
+main #actions {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 3em;
+}
+main #actions .heading {
+  text-align: center;
+}
+main #actions .heading h1 {
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+main #actions #services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+main #actions #services .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main #actions #services .row .col {
+  width: 25vw;
+  margin: 2em 0;
+}
+main #actions #services .row .col .service-item {
+  display: flex;
+  flex-direction: row;
+}
+main #actions #services .row .col .service-item .service-icon {
+  width: 200px;
+}
+main #actions #services .row .col .service-item .service-text {
+  border-left: 2px solid rgba(0, 0, 0, 0.04);
+  padding-left: 1em;
+  position: relative;
+}
+main #actions #services .row .col .service-item .service-text::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 40px;
+  background: #ff5722;
+  left: -2.5px;
+  top: 25%;
+}
+main #actions #services .row .col .service-item .service-text h3 {
+  margin-bottom: 0.5em;
 }/*# sourceMappingURL=main.css.map */
