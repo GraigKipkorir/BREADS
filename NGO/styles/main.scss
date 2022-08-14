@@ -20,8 +20,24 @@ main{
             width: 42%;
             font-size: 2.4em;
         }
+        .heading{
+            width: fit-content;
+            margin: 1.1em 0;
+            position: relative;
+            padding-left: 50px;
+            font-weight: bold;
+            &::after{
+                position: absolute;
+                height: 3px;
+                width: 40px;
+                content: '';
+                background: #ff5722;
+                left: 0;
+                top: 50%;
+            }
+        }
         p{
-            margin: 1em 0;
+            margin-bottom: 1.5em;
             width: 35%;
         }
         .more-btn{
