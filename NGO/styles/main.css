@@ -221,8 +221,19 @@ main #blogs #blog-list .row .col .blog-item .blog-response {
 main #blogs #blog-list .row .col .blog-item .blog-response i {
   margin-right: 5px;
 }
+main #contacts {
+  padding: 3em;
+}
+main #contacts #contact-container {
+  margin: 3em 0;
+}
 main #contacts #contact-container .row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+main #contacts #contact-container .row p {
+  margin: 1em 0;
 }
 main #contacts #contact-container .row .col ul {
   flex-direction: column;
@@ -234,6 +245,26 @@ main #contacts #contact-container .row .col form {
   display: flex;
   flex-direction: column;
 }
-main #contacts #contact-container .row .col form input[type=text], main #contacts #contact-container .row .col form input[type=email] {
+main #contacts #contact-container .row .col form .input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+main #contacts #contact-container .row .col form input[type=text], main #contacts #contact-container .row .col form input[type=email], main #contacts #contact-container .row .col form input[type=button] {
   padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+main #contacts #contact-container .row .col form textarea {
+  resize: none;
+  border: 2px solid rgba(0, 0, 0, 0.04);
+  margin: 1em 0;
+  padding: 10px;
+}
+main #contacts #contact-container .row .col form input[type=button] {
+  background-color: #ff5722;
+  color: #ffffff;
+  outline: none;
+  border: 2px solid #ff5722;
+  width: 35%;
 }/*# sourceMappingURL=main.css.map */

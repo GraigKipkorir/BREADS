@@ -228,9 +228,16 @@ main{
         }
     }
     #contacts{
+        padding: 3em;
         #contact-container{
+            margin: 3em 0;
             .row{
-                display: flex;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1em;
+                p{
+                    margin: 1em 0;
+                }
                 .col{
                     ul{
                         flex-direction: column;
@@ -241,8 +248,28 @@ main{
                     form{
                         display: flex;
                         flex-direction: column;
-                        input[type="text"],input[type="email"]{
+                        .input-group{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-gap: 1em;
+                        }
+                        input[type="text"],input[type="email"],input[type="button"]{
                             padding: 10px;
+                            border: 2px solid rgba(0,0,0,0.04);
+                            border-radius: 4px;
+                        }
+                        textarea{
+                            resize: none;
+                            border: 2px solid rgba(0,0,0,0.04);
+                            margin: 1em 0;
+                            padding: 10px;
+                        }
+                        input[type="button"]{
+                            background-color: #ff5722;
+                            color: #ffffff;
+                            outline: none;
+                            border: 2px solid #ff5722;
+                            width: 35%;
                         }
                     }
                 }
