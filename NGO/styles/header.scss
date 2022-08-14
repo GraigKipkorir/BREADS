@@ -1,0 +1,45 @@
+header{
+    #tab1{
+        background: #ff5722;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-content: center;
+        justify-items: center;
+        padding: 10px;
+        font-size: 12px;
+        a{
+            color: #ffffff;
+        }
+        li{
+            margin: 4px;
+        }
+        #lead-ul{
+            grid-row: 1/2;
+        }
+        #child-ul{
+            grid-row: 2/3;
+        }
+    }
+    #tab2{
+        padding: 1.2em 7em;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2em;
+        #logo{
+            position: relative;
+            img{
+                position: absolute;
+                width: 120px;
+                top: -20px;
+            }
+        }
+        nav{
+            ul{
+                li{
+                    margin: 0 10px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

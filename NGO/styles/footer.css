@@ -1,0 +1,17 @@
+footer {
+  background: #ff5722;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+footer ul {
+  margin: 2em 0;
+}
+footer ul i {
+  margin: 5px;
+}
+footer *, footer a {
+  color: #ffffff;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,39 @@
+header #tab1 {
+  background: #ff5722;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+  padding: 10px;
+  font-size: 12px;
+}
+header #tab1 a {
+  color: #ffffff;
+}
+header #tab1 li {
+  margin: 4px;
+}
+header #tab1 #lead-ul {
+  grid-row: 1/2;
+}
+header #tab1 #child-ul {
+  grid-row: 2/3;
+}
+header #tab2 {
+  padding: 1.2em 7em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+header #tab2 #logo {
+  position: relative;
+}
+header #tab2 #logo img {
+  position: absolute;
+  width: 120px;
+  top: -20px;
+}
+header #tab2 nav ul li {
+  margin: 0 10px;
+  font-size: 14px;
+}/*# sourceMappingURL=header.css.map */

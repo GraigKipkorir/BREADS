@@ -1,0 +1,114 @@
+main{
+    section{
+        padding: 1.2em 3em;
+        p{
+            font-size: 14px;
+        }
+    }
+    #landing{
+        height: calc(100vh - 120px);
+        background: linear-gradient(90deg,#000000c5,#000000c5), url('../images/candle.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        line-height: 1.4;
+        h1{
+            width: 42%;
+            font-size: 2.4em;
+        }
+        p{
+            margin: 1em 0;
+            width: 35%;
+        }
+        .more-btn{
+            position: relative;
+            span{
+                position: absolute;
+                padding: 10px 0;
+                display: inline-block;
+                width: 120px;
+                left: 0;
+                &::after,&::before{
+                    position: absolute;
+                    content: '';
+                    width: 50px;
+                    height: 100%;
+                    background-color: #ff5722;
+                    top: 0;
+                }
+                &::after{                    
+                    left: 40px;
+                    transform: scaleX(1);
+                    transform-origin: left;
+                    transition: transform ease-in .2s;
+                }
+                &::before{
+                    left: -10px;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform ease-in .2s;
+                }
+            }
+            a{
+                position: absolute;
+                width: 100px;
+                z-index: 1;
+                color: #ffffff;
+                font-weight: 400;
+                font-size: 14px;
+                &:hover~span{
+                    &::before{
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+                    
+                    &::after{
+                        transform: scaleX(0);
+                        transform-origin: right;
+                    }
+                }
+            }
+        }
+            
+    }
+    #featured{
+        #featured_container{
+            padding: 1.2em 3em;
+            .row{
+                display: flex;
+                .col-md-4{
+                    margin: 0 1.2em;
+                    padding: 1em 1.2em;
+                    .col-row{
+                        display: grid;
+                        grid-template-columns: 1fr 2.4fr;
+                        .icon{
+                            grid-column: 1/2;
+                            i{
+                                font-size: 2.6em;
+                            }
+                        }
+                        .text{
+                            grid-column: 2/3;
+                            line-height: 1.2;
+                            h2{
+                                font-size: 14px;
+                            }
+                            p{
+                                margin: 8px 0 1.2em 0;
+                            }
+                            a{
+                                color: #ff5722;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

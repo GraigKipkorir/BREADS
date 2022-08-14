@@ -1,0 +1,17 @@
+footer{
+    background: #ff5722;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    ul{
+        margin: 2em 0;
+        i{
+            margin: 5px;
+        }
+    }
+    *,a{
+        color: #ffffff;
+    }
+}
