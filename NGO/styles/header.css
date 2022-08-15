@@ -30,14 +30,6 @@ header #tab2 {
   font-size: 1.2em;
   background: #ffffff;
 }
-header #tab2 #logo {
-  position: relative;
-}
-header #tab2 #logo img {
-  position: absolute;
-  width: 120px;
-  top: -20px;
-}
 header #tab2 nav ul li {
   margin: 0 10px;
   font-size: 14px;
