@@ -307,14 +307,22 @@ main{
         }
     }
     #contacts{
-        padding: 3em;
+        width: 100%;
+        padding: 1.2em;
+        @include tablets{
+            padding: 3em;
+        }
         #contact-container{
             margin: 3em 0;
             .row{
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                @include tablets{
+                    grid-template-columns: 1fr 1fr;
+                }
                 grid-gap: 1em;
                 p{
+                    font-size: 12px;
                     margin: 1em 0;
                 }
                 .col{

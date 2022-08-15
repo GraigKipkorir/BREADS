@@ -310,17 +310,29 @@ main #blogs #blog-list .row .col .blog-item .blog-response i {
   margin-right: 5px;
 }
 main #contacts {
-  padding: 3em;
+  width: 100%;
+  padding: 1.2em;
+}
+@media (min-width: 768px) {
+  main #contacts {
+    padding: 3em;
+  }
 }
 main #contacts #contact-container {
   margin: 3em 0;
 }
 main #contacts #contact-container .row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 1em;
 }
+@media (min-width: 768px) {
+  main #contacts #contact-container .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 main #contacts #contact-container .row p {
+  font-size: 12px;
   margin: 1em 0;
 }
 main #contacts #contact-container .row .col ul {
