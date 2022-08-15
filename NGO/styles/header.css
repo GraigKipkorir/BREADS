@@ -1,3 +1,6 @@
+header {
+  overflow-x: hidden;
+}
 header #tab1 {
   background: #ff5722;
   display: grid;
