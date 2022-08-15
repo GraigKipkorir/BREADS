@@ -275,11 +275,14 @@ main{
                             @include tablets{
                                 height: 15vh;
                             }
+                            @include desktop{
+                                height: 25vh;
+                            }
                         }
                         .blog-template-1,.blog-template-2,.blog-template-3{
-                            background-repeat: no-repeat;
                             background-size: cover;
                             background-position: center;
+                            background-repeat: no-repeat;
                         }
                         .blog-template-1{
                             background: url('../images/blog-1.jpg');
