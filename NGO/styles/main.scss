@@ -43,7 +43,6 @@ main{
         background: linear-gradient(90deg,#000000c5,#000000c5), url('../images/candle.jpg');
         background-size: cover;
         background-position: center;
-        color: #ffffff;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -53,6 +52,7 @@ main{
             height: 60vh;
         }
         h1{
+            color: #ffffff;
             font-size: 1.2em;
             width: 80%;
             @include tablets{
@@ -60,6 +60,7 @@ main{
             }
         }
         .heading{
+            color: #ffffff;
             width: fit-content;
             margin: 1.1em 0;
             position: relative;
@@ -77,6 +78,7 @@ main{
             }
         }
         p{
+            color: #ffffff;
             margin-bottom: 1.6em;
             width: 80%;
             @include tablets{

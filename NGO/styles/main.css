@@ -24,7 +24,6 @@ main #landing {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.7725490196), rgba(0, 0, 0, 0.7725490196)), url("../images/candle.jpg");
   background-size: cover;
   background-position: center;
-  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +36,7 @@ main #landing {
   }
 }
 main #landing h1 {
+  color: #ffffff;
   font-size: 1.2em;
   width: 80%;
 }
@@ -46,6 +46,7 @@ main #landing h1 {
   }
 }
 main #landing .heading {
+  color: #ffffff;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -65,6 +66,7 @@ main #landing .heading::after {
   top: 50%;
 }
 main #landing p {
+  color: #ffffff;
   margin-bottom: 1.6em;
   width: 80%;
 }
