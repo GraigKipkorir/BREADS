@@ -267,18 +267,27 @@ main{
                         margin: 1.2em 0;
                         .blog-template{
                             height: 40vh;
-                            background-size: cover;
-                            background-position: center;
-                            background-repeat: no-repeat;
+                            @include tablets{
+                                height: 20vh;
+                            }
                         }
                         .blog-template-1{
                             background: url('../images/blog-1.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
                         }
                         .blog-template-2{
-                            background: url('../images/blog-2.jpg');
+                            background: url('../images/blog-2.jpg');                            
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
                         }
                         .blog-template-3{
-                            background: url('../images/blog-3.jpg');
+                            background: url('../images/blog-3.jpg');                            
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
                         }
                         .blog-text{
                             text-align: center;
@@ -307,7 +316,6 @@ main{
         }
     }
     #contacts{
-        width: 100%;
         padding: 1.2em;
         @include tablets{
             padding: 3em;
@@ -315,12 +323,11 @@ main{
         #contact-container{
             margin: 3em 0;
             .row{
-                display: grid;
-                grid-template-rows: 1fr 1fr;
                 @include tablets{
+                    display: grid;
                     grid-template-columns: 1fr 1fr;
+                    grid-gap: 1em;
                 }
-                grid-gap: 1em;
                 p{
                     font-size: 12px;
                     margin: 1em 0;
@@ -329,6 +336,7 @@ main{
                     ul{
                         flex-direction: column;
                         li{
+                            font-size: 12px;
                             margin: .5em 0;
                         }
                     }
@@ -336,14 +344,18 @@ main{
                         display: flex;
                         flex-direction: column;
                         .input-group{
-                            display: grid;
-                            grid-template-columns: 1fr 1fr;
-                            grid-gap: 1em;
+                            @include tablets{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                grid-gap: 1em;
+                            }
                         }
                         input[type="text"],input[type="email"],input[type="button"]{
                             padding: 10px;
                             border: 2px solid rgba(0,0,0,0.04);
                             border-radius: 4px;
+                            width: 100%;
+                            margin: 1em 0;
                         }
                         textarea{
                             resize: none;

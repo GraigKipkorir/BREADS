@@ -275,18 +275,29 @@ main #blogs #blog-list .row .col .blog-item {
 }
 main #blogs #blog-list .row .col .blog-item .blog-template {
   height: 40vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  main #blogs #blog-list .row .col .blog-item .blog-template {
+    height: 20vh;
+  }
 }
 main #blogs #blog-list .row .col .blog-item .blog-template-1 {
   background: url("../images/blog-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main #blogs #blog-list .row .col .blog-item .blog-template-2 {
   background: url("../images/blog-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main #blogs #blog-list .row .col .blog-item .blog-template-3 {
   background: url("../images/blog-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main #blogs #blog-list .row .col .blog-item .blog-text {
   text-align: center;
@@ -310,7 +321,6 @@ main #blogs #blog-list .row .col .blog-item .blog-response i {
   margin-right: 5px;
 }
 main #contacts {
-  width: 100%;
   padding: 1.2em;
 }
 @media (min-width: 768px) {
@@ -321,14 +331,11 @@ main #contacts {
 main #contacts #contact-container {
   margin: 3em 0;
 }
-main #contacts #contact-container .row {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 1em;
-}
 @media (min-width: 768px) {
   main #contacts #contact-container .row {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
   }
 }
 main #contacts #contact-container .row p {
@@ -339,21 +346,26 @@ main #contacts #contact-container .row .col ul {
   flex-direction: column;
 }
 main #contacts #contact-container .row .col ul li {
+  font-size: 12px;
   margin: 0.5em 0;
 }
 main #contacts #contact-container .row .col form {
   display: flex;
   flex-direction: column;
 }
-main #contacts #contact-container .row .col form .input-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
+@media (min-width: 768px) {
+  main #contacts #contact-container .row .col form .input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
 }
 main #contacts #contact-container .row .col form input[type=text], main #contacts #contact-container .row .col form input[type=email], main #contacts #contact-container .row .col form input[type=button] {
   padding: 10px;
   border: 2px solid rgba(0, 0, 0, 0.04);
   border-radius: 4px;
+  width: 100%;
+  margin: 1em 0;
 }
 main #contacts #contact-container .row .col form textarea {
   resize: none;
