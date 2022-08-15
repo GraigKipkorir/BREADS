@@ -290,7 +290,7 @@ main #blogs #blog-list .row .col .blog-item .blog-template {
 }
 @media (min-width: 1100px) {
   main #blogs #blog-list .row .col .blog-item .blog-template {
-    height: 25vh;
+    height: 40vh;
   }
 }
 main #blogs #blog-list .row .col .blog-item .blog-template-1, main #blogs #blog-list .row .col .blog-item .blog-template-2, main #blogs #blog-list .row .col .blog-item .blog-template-3 {
