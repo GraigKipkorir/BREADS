@@ -49,10 +49,13 @@ main{
         justify-content: center;
         align-items: flex-start;
         line-height: 1.4;
+        @include tablets{
+            height: 60vh;
+        }
         h1{
             font-size: 1.2em;
+            width: 80%;
             @include tablets{
-                width: 42%;
                 font-size: 2.4em;
             }
         }
@@ -75,8 +78,9 @@ main{
         }
         p{
             margin-bottom: 1.6em;
+            width: 80%;
             @include tablets{
-                width: 35%;
+                width: 60%;
             }
         }
         .more-btn{
@@ -268,26 +272,22 @@ main{
                         .blog-template{
                             height: 40vh;
                             @include tablets{
-                                height: 20vh;
+                                height: 15vh;
                             }
+                        }
+                        .blog-template-1,.blog-template-2,.blog-template-3{
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
                         }
                         .blog-template-1{
                             background: url('../images/blog-1.jpg');
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;
                         }
                         .blog-template-2{
-                            background: url('../images/blog-2.jpg');                            
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;
+                            background: url('../images/blog-2.jpg');
                         }
                         .blog-template-3{
-                            background: url('../images/blog-3.jpg');                            
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;
+                            background: url('../images/blog-3.jpg');
                         }
                         .blog-text{
                             text-align: center;

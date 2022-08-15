@@ -23,6 +23,7 @@ header #tab1 #child-ul {
   grid-row: 2/3;
 }
 header #tab2 {
+  z-index: 9999;
   padding: 1.2em 7em;
   display: flex;
   justify-content: space-between;
@@ -47,6 +48,5 @@ header #tab2 nav ul li {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 9999;
   box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=header.css.map */

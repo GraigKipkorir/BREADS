@@ -31,12 +31,17 @@ main #landing {
   align-items: flex-start;
   line-height: 1.4;
 }
+@media (min-width: 768px) {
+  main #landing {
+    height: 60vh;
+  }
+}
 main #landing h1 {
   font-size: 1.2em;
+  width: 80%;
 }
 @media (min-width: 768px) {
   main #landing h1 {
-    width: 42%;
     font-size: 2.4em;
   }
 }
@@ -61,10 +66,11 @@ main #landing .heading::after {
 }
 main #landing p {
   margin-bottom: 1.6em;
+  width: 80%;
 }
 @media (min-width: 768px) {
   main #landing p {
-    width: 35%;
+    width: 60%;
   }
 }
 main #landing .more-btn {
@@ -278,26 +284,22 @@ main #blogs #blog-list .row .col .blog-item .blog-template {
 }
 @media (min-width: 768px) {
   main #blogs #blog-list .row .col .blog-item .blog-template {
-    height: 20vh;
+    height: 15vh;
   }
+}
+main #blogs #blog-list .row .col .blog-item .blog-template-1, main #blogs #blog-list .row .col .blog-item .blog-template-2, main #blogs #blog-list .row .col .blog-item .blog-template-3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main #blogs #blog-list .row .col .blog-item .blog-template-1 {
   background: url("../images/blog-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 main #blogs #blog-list .row .col .blog-item .blog-template-2 {
   background: url("../images/blog-2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 main #blogs #blog-list .row .col .blog-item .blog-template-3 {
   background: url("../images/blog-3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 main #blogs #blog-list .row .col .blog-item .blog-text {
   text-align: center;
