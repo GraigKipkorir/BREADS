@@ -39,7 +39,7 @@ main{
         }
     }
     #landing{
-        height: calc(100vh - 120px);
+        height: 65vh;
         background: linear-gradient(90deg,#000000c5,#000000c5), url('../images/candle.jpg');
         background-size: cover;
         background-position: center;
@@ -49,9 +49,6 @@ main{
         justify-content: center;
         align-items: flex-start;
         line-height: 1.4;
-        @include tablets{
-            height: 60vh;
-        }
         h1{
             color: #ffffff;
             font-size: 1.2em;
@@ -265,13 +262,13 @@ main{
                 }
                 .col{
                     @include tablets{
-                        width: calc(100vw / 4);
+                        width: calc(100vw / 3.5);
                     }
                     .blog-item{
                         background: #f3f6ff;
                         margin: 1.2em 0;
                         .blog-template{
-                            height: 40vh;
+                            height: 30vh;
                             @include tablets{
                                 height: 15vh;
                             }
@@ -305,7 +302,7 @@ main{
                         .blog-response{
                             font-size: 12px;
                             margin: 0 1.2em;
-                            border-top: 2px solid #ffffff;
+                            border-top: 2px solid rgba(0, 0, 0, 0.04);
                             padding: 1.2em;
                             display: flex;
                             align-items: center;
@@ -382,18 +379,46 @@ main{
     #testimonials{
         .swiper {
             width: 100%;
-            height: 45vh;
+            height: fit-content;
+            margin-top: 2em;
           }
     
           .swiper-slide {
+            border-radius: 5px;
             text-align: center;
             font-size: 18px;
-            background: #fff;
+            background: rgba(0, 0, 0, 0.04);
     
             /* Center slide text vertically */
             display: flex;
-            justify-content: center;
             align-items: center;
+            flex-direction: column;
+            padding: 1.2em 1.5em;
+            p{
+                font-size: 12px;
+            }
+            .name{
+                margin-top: 1.4em;
+                color: #ff5722;
+                font-style: italic;
+            }
+            .person-1,.person-2,.person-3{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-bottom: 2em;
+                background-position: center;
+            }
+            .person-1{
+                background: url('../images/person_1.jpg');
+            }
+            .person-2{
+                background: url('../images/person_2.jpg');
+            }
+            .person-3{
+                background: url('../images/person_3.jpg');
+            }
+
           }
     
           .swiper-slide img {

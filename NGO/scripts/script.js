@@ -18,6 +18,10 @@ let swiper = new Swiper(".mySwiper", {
   centerSlide: 'true',
   fade: 'true',
   grabCursor: 'true',
+  autoplay:{
+    delay: 4500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
