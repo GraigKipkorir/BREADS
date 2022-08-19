@@ -1,26 +1,5 @@
 header{
     overflow-x: hidden;
-    #tab1{
-        background: #ff5722;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        align-content: center;
-        justify-items: center;
-        padding: 10px;
-        font-size: 12px;
-        a{
-            color: #ffffff;
-        }
-        li{
-            margin: 4px;
-        }
-        #lead-ul{
-            grid-row: 1/2;
-        }
-        #child-ul{
-            grid-row: 2/3;
-        }
-    }
     #tab2{
         z-index: 9999;
         padding: 1.2em;

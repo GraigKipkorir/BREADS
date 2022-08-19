@@ -20,25 +20,7 @@
     <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
 </head>
 <body>
-    <header>
-        <div id="tab1">
-            <ul id="lead-ul">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <ul id="child-ul">
-                <li>
-                    <a href="#"><i class="fa fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
-                </li>
-            </ul>
-        </div>
+    <header id="header">
         <div id="tab2">
             <!-- <div id="logo">
                 <a href="#">
@@ -328,7 +310,7 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-            let element = document.getElementById("tab2") 
+            let element = document.getElementById("header") 
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {              
                 element.classList.add("fixedheader");
             } else {
